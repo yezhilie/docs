@@ -318,21 +318,23 @@
 <ul><li>&#x53C2;&#x6570;&#x89E3;&#x6790;&#xFF1A;
 </li></ul>
 <p>$phone &#xFF1A;&#x77ED;&#x4FE1;&#x63A5;&#x6536;&#x4EBA;&#xFF0C;&#x591A;&#x4E2A;&#x63A5;&#x6536;&#x4EBA;&#x53F7;&#x7801;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x82F1;&#x6587;&#x534A;&#x89D2;&#x9017;&#x53F7;&#x9694;&#x5F00;</p><p>$data &#xFF1A;&#x77ED;&#x4FE1;&#x6A21;&#x677F;&#x53D8;&#x91CF;&#xFF0C;JSON&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x975E;&#x5FC5;&#x586B;&#x5B57;&#x6BB5;&#xFF0C;&#x89C6;&#x77ED;&#x4FE1;&#x6A21;&#x677F;&#x800C;&#x5B9A;</p><ul><li>&#x8FD4;&#x56DE;&#x6570;&#x636E;&#xFF1A;
-```json
-{
-  &quot;result&quot;: &quot;{True/False}&quot;,
-  &quot;id&quot;: &quot;{&#x77ED;&#x4FE1;&#x53D1;&#x9001;&#x65E5;&#x5FD7;&#x6570;&#x636E;&#x5E93;ID}&quot;,
-  &quot;msg&quot;: &quot;{&#x9519;&#x8BEF;&#x4FE1;&#x606F;}&quot;
-}
 </li></ul>
-<pre><code>
-- &#x4EE3;&#x7801;&#x793A;&#x4F8B;&#xFF1A;</code></pre>
-<p>use Sms\Controller\ApiController as sms;</p><p>class XXX {
-  function sendSMS($phone, $data){
-    $smsClient = new sms();
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;result&quot;</span>: <span class="hljs-string">&quot;{True/False}&quot;</span>,
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;{&#x77ED;&#x4FE1;&#x53D1;&#x9001;&#x65E5;&#x5FD7;&#x6570;&#x636E;&#x5E93;ID}&quot;</span>,
+    <span class="hljs-string">&quot;msg&quot;</span>: <span class="hljs-string">&quot;{&#x9519;&#x8BEF;&#x4FE1;&#x606F;}&quot;</span>
+}</code></pre>
+<ul><li>&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#xFF1A;
+</li></ul>
+<pre><code class="lang-php"><span class="hljs-keyword">use</span> <span class="hljs-title">Sms</span>\<span class="hljs-title">Controller</span>\<span class="hljs-title">ApiController</span> <span class="hljs-title">as</span> <span class="hljs-title">sms</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">XXX</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sendSMS</span><span class="hljs-params">($phone, $data)</span></span>{
+    $smsClient = <span class="hljs-keyword">new</span> sms();
     $result = $smsClient-&gt;sendSms($phone,$data);
   }
-}</p>
+}</code></pre>
+
                             </div>
                             
                         
@@ -395,7 +397,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"短信","level":"3.2","depth":1,"next":{"title":"系统函数","level":"4.1","depth":1,"path":"extra/system_function.md","ref":"extra/system_function.md","articles":[]},"previous":{"title":"中国区域","level":"3.1","depth":1,"path":"module/area.md","ref":"module/area.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"module/sms.md","mtime":"2016-10-16T09:01:07.226Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-16T09:02:28.925Z"},"basePath":"..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"短信","level":"3.2","depth":1,"next":{"title":"系统函数","level":"4.1","depth":1,"path":"extra/system_function.md","ref":"extra/system_function.md","articles":[]},"previous":{"title":"中国区域","level":"3.1","depth":1,"path":"module/area.md","ref":"module/area.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"module/sms.md","mtime":"2016-10-16T09:09:55.108Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-16T09:11:18.933Z"},"basePath":"..","book":{"language":""}});
 })();
 </script>
 
