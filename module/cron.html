@@ -396,22 +396,25 @@
 <p>&#x53C2;&#x8003;&#xFF1A;<a href="http://www.pdtools.net/tools/becron.jsp" target="_blank">Cron&#x8868;&#x8FBE;&#x5F0F;&#x751F;&#x6210;&#x5668;</a></p><ul><li>Windows &#x4F7F;&#x7528;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;
 </li></ul>
 <h4 id="2-&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x7528;&#x6237;">2. &#x865A;&#x62DF;&#x4E3B;&#x673A;&#x7528;&#x6237;</h4><p>&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x7528;&#x6237;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x7F51;&#x7AD9;&#x6A21;&#x677F;&#x4E2D;&#x6700;&#x5E95;&#x90E8;&#x589E;&#x52A0;&#x4E00;&#x4E2A;js&#x8C03;&#x7528;:</p><pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;http://&#x7F51;&#x7AD9;&#x5730;&#x5740;/index.php?g=Cron&amp;m=Index&amp;a=index&quot;&gt;&lt;/script&gt;</code></pre>
-<h3 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h3><p>1.&#x521B;&#x5EFA;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#xFF1A;&#x5728; <code>app/Cron/</code> &#x76EE;&#x5F55;&#x4E0B;,&#x65B0;&#x5EFA;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x6587;&#x4EF6;&#xFF0C;&#x6587;&#x4EF6;&#x540D;&#x5FC5;&#x987B;&#x4E3A;<code>CMSxx.php</code>(&#x4EE5;CMS&#x5F00;&#x5934;)&#x5F62;&#x5F0F;</p><p>&#x6837;&#x4F8B;&#xFF1A;</p><pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+<h3 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h3><p>1.&#x521B;&#x5EFA;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#xFF1A;&#x5728; <code>app/Application/Cron/CronScript/</code> &#x76EE;&#x5F55;&#x4E0B;,&#x65B0;&#x5EFA;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x6587;&#x4EF6;</p><p>&#x6837;&#x4F8B;&#xFF1A;</p><pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
 
 <span class="hljs-comment">// +----------------------------------------------------------------------</span>
 <span class="hljs-comment">// | &#x8BA1;&#x5212;&#x4EFB;&#x52A1; - &#x793A;&#x4F8B;&#x811A;&#x672C;</span>
 <span class="hljs-comment">// +----------------------------------------------------------------------</span>
 
-<span class="hljs-keyword">namespace</span> <span class="hljs-title">CronScript</span>;
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">Cron</span>\<span class="hljs-title">CronScript</span>;
 
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CMSDemo</span> </span>{
+<span class="hljs-keyword">use</span> <span class="hljs-title">Cron</span>\<span class="hljs-title">Base</span>\<span class="hljs-title">Cron</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Demo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Cron</span> </span>{
 
     <span class="hljs-comment">//&#x4EFB;&#x52A1;&#x4E3B;&#x4F53;</span>
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">run</span><span class="hljs-params">($cronId)</span> </span>{
-        \Think\Log::record(<span class="hljs-string">&quot;&#x6211;&#x6267;&#x884C;&#x4E86;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x4E8B;&#x4F8B; CMSDemo.php&#xFF01;&quot;</span>);
+        \Think\Log::record(<span class="hljs-string">&quot;&#x6211;&#x6267;&#x884C;&#x4E86;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x4E8B;&#x4F8B; Demo.class.php&#xFF01;&quot;</span>);
     }
 
-}</code></pre>
+}
+</code></pre>
 <p>2.&#x5728;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x9875;&#x9762;&#x6CE8;&#x518C;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;</p><p><img alt="&#x56FE;&#x7247;" src="https://dn-coding-net-production-pp.qbox.me/8acc7c4f-7145-410a-99ec-c8c097c5c9d3.png"></p>
                             </div>
                             
@@ -448,7 +451,7 @@
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Oct 26th 16</a>
+                    <a href="#">Updated Oct 30th 16</a>
                 </li>
             </ul>
         </div>
@@ -475,7 +478,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"计划任务","level":"3.3","depth":1,"next":{"title":"系统函数","level":"4.1","depth":1,"path":"extra/system_function.md","ref":"extra/system_function.md","articles":[]},"previous":{"title":"短信","level":"3.2","depth":1,"path":"module/sms.md","ref":"module/sms.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"module/cron.md","mtime":"2016-10-26T01:18:47.274Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-26T01:19:51.924Z"},"basePath":"..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"计划任务","level":"3.3","depth":1,"next":{"title":"系统函数","level":"4.1","depth":1,"path":"extra/system_function.md","ref":"extra/system_function.md","articles":[]},"previous":{"title":"短信","level":"3.2","depth":1,"path":"module/sms.md","ref":"module/sms.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"module/cron.md","mtime":"2016-10-30T16:37:03.409Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-30T16:38:13.224Z"},"basePath":"..","book":{"language":""}});
 })();
 </script>
 
