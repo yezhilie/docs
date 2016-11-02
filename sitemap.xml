@@ -18,7 +18,9 @@
 <url> <loc>https://toolchain.gitbook.com/guide/behaivor/readme.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/guide/behaivor/rule.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/guide/behaivor/usage.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://toolchain.gitbook.com/module/area.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://toolchain.gitbook.com/module/area/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://toolchain.gitbook.com/module/area/area.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://toolchain.gitbook.com/module/area/school.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/module/sms.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/module/cron.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/extra/system_function.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
