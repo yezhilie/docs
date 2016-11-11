@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>行为规则 · ZtbCMS</title>
+        <title>自定义成功(失败)页面 · ZtbCMS</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,10 +57,10 @@
 
 
     
-    <link rel="next" href="usage.html" />
+    <link rel="next" href="category_search_custom.html" />
     
     
-    <link rel="prev" href="readme.html" />
+    <link rel="prev" href="custom_admin_icon.html" />
     
 
 
@@ -98,7 +98,7 @@
 
 
 
-<a href="https://github.com/ztbcms/docs/blob/develop/docs/guide/behaivor/rule.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/best_practic/tips/custom_page.md" target="_blank" class="btn btn-link pull-right hidden-xs">
     修正当前页
 </a>
 
@@ -188,7 +188,7 @@
             
     
         
-        <a href="../template/" class="list-group-item ">
+        <a href="../../guide/template/" class="list-group-item ">
         
 
             
@@ -206,13 +206,13 @@
         
     
         
-        <a href="readme.html" class="list-group-item ">
+        <a href="../../guide/behaivor/readme.html" class="list-group-item ">
         
 
             
 
             
-            <i class="octicon octicon-chevron-down"></i>
+            <i class="octicon octicon-chevron-right"></i>
             
 
             行为管理
@@ -220,46 +220,6 @@
         
         </a>
         
-
-        
-        
-    
-        
-        <a href="rule.html" class="list-group-item active">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            行为规则
-
-        
-        </a>
-        
-
-        
-    
-        
-        <a href="usage.html" class="list-group-item ">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            使用方法
-
-        
-        </a>
-        
-
-        
-    
 
         
     
@@ -372,13 +332,13 @@
             
     
         
-        <a href="../../best_practic/dev_tips.html" class="list-group-item ">
+        <a href="../dev_tips.html" class="list-group-item ">
         
 
             
 
             
-            <i class="octicon octicon-chevron-right"></i>
+            <i class="octicon octicon-chevron-down"></i>
             
 
             开发Tips汇总
@@ -388,9 +348,85 @@
         
 
         
+        
     
         
-        <a href="../../best_practic/ztbcms_storage_engine.html" class="list-group-item ">
+        <a href="module.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            模块
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="custom_admin_icon.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            自定义后台iconfont
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="custom_page.html" class="list-group-item active">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            自定义成功(失败)页面
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="category_search_custom.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            自定义栏目列表搜索条件
+
+        
+        </a>
+        
+
+        
+    
+
+        
+    
+        
+        <a href="../ztbcms_storage_engine.html" class="list-group-item ">
         
 
             
@@ -406,7 +442,7 @@
         
     
         
-        <a href="../../best_practic/behavior_manage.html" class="list-group-item ">
+        <a href="../behavior_manage.html" class="list-group-item ">
         
 
             
@@ -466,29 +502,9 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                <h2 id="&#x884C;&#x4E3A;&#x89C4;&#x5219;&#x4F7F;&#x7528;&#x8BF4;&#x660E;">&#x884C;&#x4E3A;&#x89C4;&#x5219;&#x4F7F;&#x7528;&#x8BF4;&#x660E;</h2><h3 id="&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;1&#xFF1A;">&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;1&#xFF1A;</h3><p>&#x683C;&#x5F0F;&#xFF1A; <code>table:$table|field:$field|condition:$condition|rule:$rule[|cycle:$cycle|max:$max]</code></p><p>&#x89C4;&#x5219;&#x5B57;&#x6BB5;&#x89E3;&#x91CA;&#xFF1A;</p><ul><li>table&#xFF1A;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x636E;&#x8868;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x8868;&#x524D;&#x7F00;
-</li>
-<li>field&#xFF1A;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x5B57;&#x6BB5;
-</li>
-<li>condition&#xFF1A;&#x64CD;&#x4F5C;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x76EE;&#x524D;&#x652F;&#x6301;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x6761;&#x4EF6;&#x4E2D;&#x5F15;&#x7528;&#x884C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x4F7F;&#x7528;<code>{$parameter}</code>&#x7684;&#x5F62;&#x5F0F;&#xFF08;&#x8BE5;&#x5F62;&#x5F0F;&#x53EA;&#x5BF9;&#x884C;&#x4E3A;&#x6807;&#x7B7E;&#x53C2;&#x6570;&#x662F;&#x4E3A;&#x6570;&#x7EC4;&#x7684;&#x6709;&#x6548;&#xFF0C;&#x7EAF;&#x788E;&#x7684;&#x53C2;&#x6570;&#x4F7F;&#x7528;<code>{$self}</code>&#xFF09;
-</li>
-<li>rule&#xFF1A;&#x5BF9;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x7684;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#xFF0C;&#x76EE;&#x524D;&#x652F;&#x6301;&#x52A0;&#x3001;&#x51CF;
-</li>
-<li>cycle&#xFF1A;&#x6267;&#x884C;&#x5468;&#x671F;&#xFF0C;&#x5355;&#x4F4D;&#xFF08;&#x5C0F;&#x65F6;&#xFF09;&#xFF0C;&#x8868;&#x793A;<code>$cycle</code>&#x5C0F;&#x65F6;&#x5185;&#x6700;&#x591A;&#x6267;&#x884C;<code>$max</code>&#x6B21;
-</li>
-<li>max&#xFF1A;&#x5355;&#x4E2A;&#x5468;&#x671F;&#x5185;&#x7684;&#x6700;&#x5927;&#x6267;&#x884C;&#x6B21;&#x6570;&#xFF08;<code>$cycle</code>&#x548C;<code>$max</code>&#x5FC5;&#x987B;&#x540C;&#x65F6;&#x5B9A;&#x4E49;&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6548;&#xFF09;
-</li></ul>
-<h3 id="&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;2&#xFF1A;">&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;2&#xFF1A;</h3><p>&#x683C;&#x5F0F;&#xFF1A; <code>phpfile:$phpfile[|module:$module]</code></p><p>&#x89C4;&#x5219;&#x5B57;&#x6BB5;&#x89E3;&#x91CA;&#xFF1A;</p><ul><li>phpfile&#xFF1A;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x597D;&#x7684;&#x884C;&#x4E3A;&#x6587;&#x4EF6;&#x3002;
-</li>
-<li>module&#xFF1A;&#x884C;&#x4E3A;&#x6240;&#x5C5E;&#x6A21;&#x5757;&#xFF0C;&#x6CA1;&#x6709;&#x8BE5;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x81EA;&#x52A8;&#x5B9A;&#x4F4D;&#x5230; <code>app\Common\Behavior</code> &#x76EE;&#x5F55;&#x3002;
-</li></ul>
-<h3 id="&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;3&#xFF1A;">&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;3&#xFF1A;</h3><p>&#x683C;&#x5F0F;&#xFF1A; <code>sql:$sql[|cycle:$cycle|max:$max]</code></p><p>&#x89C4;&#x5219;&#x5B57;&#x6BB5;&#x89E3;&#x91CA;&#xFF1A;</p><ul><li>sql&#xFF1A;&#x9700;&#x8981;&#x6267;&#x884C;&#x7684;SQL&#x8BED;&#x53E5;&#xFF0C;&#x8868;&#x524D;&#x7F00;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>cms_</code>&#x4EE3;&#x66FF;&#x3002;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>{$parameter}</code> &#x7684;&#x5F62;&#x5F0F;&#xFF08;&#x8BE5;&#x5F62;&#x5F0F;&#x53EA;&#x5BF9;&#x884C;&#x4E3A;&#x6807;&#x7B7E;&#x53C2;&#x6570;&#x662F;&#x4E3A;&#x6570;&#x7EC4;&#x7684;&#x6709;&#x6548;&#xFF0C;&#x7EAF;&#x788E;&#x7684;&#x53C2;&#x6570;&#x4F7F;&#x7528;<code>{$self}&#xFF09;</code>
-</li>
-<li>cycle&#xFF1A;&#x6267;&#x884C;&#x5468;&#x671F;&#xFF0C;&#x5355;&#x4F4D;&#xFF08;&#x5C0F;&#x65F6;&#xFF09;&#xFF0C;&#x8868;&#x793A;<code>$cycle</code>&#x5C0F;&#x65F6;&#x5185;&#x6700;&#x591A;&#x6267;&#x884C;<code>$max</code>&#x6B21;
-</li>
-<li>max&#xFF1A;&#x5355;&#x4E2A;&#x5468;&#x671F;&#x5185;&#x7684;&#x6700;&#x5927;&#x6267;&#x884C;&#x6B21;&#x6570;&#xFF08;<code>$cycle</code>&#x548C;<code>$max</code>&#x5FC5;&#x987B;&#x540C;&#x65F6;&#x5B9A;&#x4E49;&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6548;&#xFF09;
-</li></ul>
-
+                                <h3 id="&#x81EA;&#x5B9A;&#x4E49;success&#x3001;error&#x9875;&#x9762;">&#x81EA;&#x5B9A;&#x4E49;success&#x3001;error&#x9875;&#x9762;</h3><p>&#x4E3E;&#x4F8B;&#xFF08;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;Content&#x6A21;&#x5757;&#xFF09;&#xFF1A;</p><p>1.&#x5728;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x7684;&#x6A21;&#x5757;&#x4E2D;<code>Conf/config.php</code>&#x4E2D;&#x6DFB;&#x52A0;</p><pre><code>&apos;TMPL_ACTION_ERROR&apos; =&gt; APP_PATH . &apos;Content/View/error.php&apos;, // &#x9ED8;&#x8BA4;&#x9519;&#x8BEF;&#x8DF3;&#x8F6C;&#x5BF9;&#x5E94;&#x7684;&#x6A21;&#x677F;&#x6587;&#x4EF6;
+&apos;TMPL_ACTION_SUCCESS&apos; =&gt; APP_PATH . &apos;Content/View/success.php&apos;, // &#x9ED8;&#x8BA4;&#x6210;&#x529F;&#x8DF3;&#x8F6C;&#x5BF9;&#x5E94;&#x7684;&#x6A21;&#x677F;&#x6587;&#x4EF6;</code></pre>
+<p>2.&#x7136;&#x540E;&#x5728;Content&#x6A21;&#x5757;&#x4E2D;&#x7684;View&#x4E2D;&#x65B0;&#x589E;<code>error.php</code>&#x548C;<code>success.php</code></p>
                             </div>
                             
                         
@@ -551,7 +567,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"行为规则","level":"2.2.1","depth":2,"next":{"title":"使用方法","level":"2.2.2","depth":2,"path":"guide/behaivor/usage.md","ref":"guide/behaivor/usage.md","articles":[]},"previous":{"title":"行为管理","level":"2.2","depth":1,"path":"guide/behaivor/readme.md","ref":"guide/behaivor/readme.md","articles":[{"title":"行为规则","level":"2.2.1","depth":2,"path":"guide/behaivor/rule.md","ref":"guide/behaivor/rule.md","articles":[]},{"title":"使用方法","level":"2.2.2","depth":2,"path":"guide/behaivor/usage.md","ref":"guide/behaivor/usage.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"guide/behaivor/rule.md","mtime":"2016-11-11T05:49:54.187Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-11T05:50:52.661Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"自定义成功(失败)页面","level":"5.1.3","depth":2,"next":{"title":"自定义栏目列表搜索条件","level":"5.1.4","depth":2,"path":"best_practic/tips/category_search_custom.md","ref":"best_practic/tips/category_search_custom.md","articles":[]},"previous":{"title":"自定义后台iconfont","level":"5.1.2","depth":2,"path":"best_practic/tips/custom_admin_icon.md","ref":"best_practic/tips/custom_admin_icon.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"best_practic/tips/custom_page.md","mtime":"2016-11-11T05:49:54.187Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-11T05:50:52.661Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 
