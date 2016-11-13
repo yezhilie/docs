@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>行为规则 · ZtbCMS</title>
+        <title>测试Behaivor · ZtbCMS</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,10 +57,10 @@
 
 
     
-    <link rel="next" href="usage.html" />
+    <link rel="next" href="../../module/area/" />
     
     
-    <link rel="prev" href="readme.html" />
+    <link rel="prev" href="usage.html" />
     
 
 
@@ -98,7 +98,7 @@
 
 
 
-<a href="https://github.com/ztbcms/docs/blob/develop/docs/guide/behaivor/rule.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/guide/behaivor/testing_behaivor.md" target="_blank" class="btn btn-link pull-right hidden-xs">
     修正当前页
 </a>
 
@@ -225,7 +225,7 @@
         
     
         
-        <a href="rule.html" class="list-group-item active">
+        <a href="rule.html" class="list-group-item ">
         
 
             
@@ -261,7 +261,7 @@
         
     
         
-        <a href="testing_behaivor.html" class="list-group-item ">
+        <a href="testing_behaivor.html" class="list-group-item active">
         
 
             
@@ -484,28 +484,73 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                <h2 id="&#x884C;&#x4E3A;&#x89C4;&#x5219;&#x4F7F;&#x7528;&#x8BF4;&#x660E;">&#x884C;&#x4E3A;&#x89C4;&#x5219;&#x4F7F;&#x7528;&#x8BF4;&#x660E;</h2><h3 id="&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;1&#xFF1A;">&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;1&#xFF1A;</h3><p>&#x683C;&#x5F0F;&#xFF1A; <code>table:$table|field:$field|condition:$condition|rule:$rule[|cycle:$cycle|max:$max]</code></p><p>&#x89C4;&#x5219;&#x5B57;&#x6BB5;&#x89E3;&#x91CA;&#xFF1A;</p><ul><li>table&#xFF1A;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x636E;&#x8868;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x8868;&#x524D;&#x7F00;
-</li>
-<li>field&#xFF1A;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x5B57;&#x6BB5;
-</li>
-<li>condition&#xFF1A;&#x64CD;&#x4F5C;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x76EE;&#x524D;&#x652F;&#x6301;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x6761;&#x4EF6;&#x4E2D;&#x5F15;&#x7528;&#x884C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x4F7F;&#x7528;<code>{$parameter}</code>&#x7684;&#x5F62;&#x5F0F;&#xFF08;&#x8BE5;&#x5F62;&#x5F0F;&#x53EA;&#x5BF9;&#x884C;&#x4E3A;&#x6807;&#x7B7E;&#x53C2;&#x6570;&#x662F;&#x4E3A;&#x6570;&#x7EC4;&#x7684;&#x6709;&#x6548;&#xFF0C;&#x7EAF;&#x788E;&#x7684;&#x53C2;&#x6570;&#x4F7F;&#x7528;<code>{$self}</code>&#xFF09;
-</li>
-<li>rule&#xFF1A;&#x5BF9;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x7684;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#xFF0C;&#x76EE;&#x524D;&#x652F;&#x6301;&#x52A0;&#x3001;&#x51CF;
-</li>
-<li>cycle&#xFF1A;&#x6267;&#x884C;&#x5468;&#x671F;&#xFF0C;&#x5355;&#x4F4D;&#xFF08;&#x5C0F;&#x65F6;&#xFF09;&#xFF0C;&#x8868;&#x793A;<code>$cycle</code>&#x5C0F;&#x65F6;&#x5185;&#x6700;&#x591A;&#x6267;&#x884C;<code>$max</code>&#x6B21;
-</li>
-<li>max&#xFF1A;&#x5355;&#x4E2A;&#x5468;&#x671F;&#x5185;&#x7684;&#x6700;&#x5927;&#x6267;&#x884C;&#x6B21;&#x6570;&#xFF08;<code>$cycle</code>&#x548C;<code>$max</code>&#x5FC5;&#x987B;&#x540C;&#x65F6;&#x5B9A;&#x4E49;&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6548;&#xFF09;
-</li></ul>
-<h3 id="&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;2&#xFF1A;">&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;2&#xFF1A;</h3><p>&#x683C;&#x5F0F;&#xFF1A; <code>phpfile:$phpfile[|module:$module]</code></p><p>&#x89C4;&#x5219;&#x5B57;&#x6BB5;&#x89E3;&#x91CA;&#xFF1A;</p><ul><li>phpfile&#xFF1A;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x597D;&#x7684;&#x884C;&#x4E3A;&#x6587;&#x4EF6;&#x3002;
-</li>
-<li>module&#xFF1A;&#x884C;&#x4E3A;&#x6240;&#x5C5E;&#x6A21;&#x5757;&#xFF0C;&#x6CA1;&#x6709;&#x8BE5;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x81EA;&#x52A8;&#x5B9A;&#x4F4D;&#x5230; <code>app\Common\Behavior</code> &#x76EE;&#x5F55;&#x3002;
-</li></ul>
-<h3 id="&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;3&#xFF1A;">&#x89C4;&#x5219;&#x5B9A;&#x4E49;&#x683C;&#x5F0F;3&#xFF1A;</h3><p>&#x683C;&#x5F0F;&#xFF1A; <code>sql:$sql[|cycle:$cycle|max:$max]</code></p><p>&#x89C4;&#x5219;&#x5B57;&#x6BB5;&#x89E3;&#x91CA;&#xFF1A;</p><ul><li>sql&#xFF1A;&#x9700;&#x8981;&#x6267;&#x884C;&#x7684;SQL&#x8BED;&#x53E5;&#xFF0C;&#x8868;&#x524D;&#x7F00;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>cms_</code>&#x4EE3;&#x66FF;&#x3002;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>{$parameter}</code> &#x7684;&#x5F62;&#x5F0F;&#xFF08;&#x8BE5;&#x5F62;&#x5F0F;&#x53EA;&#x5BF9;&#x884C;&#x4E3A;&#x6807;&#x7B7E;&#x53C2;&#x6570;&#x662F;&#x4E3A;&#x6570;&#x7EC4;&#x7684;&#x6709;&#x6548;&#xFF0C;&#x7EAF;&#x788E;&#x7684;&#x53C2;&#x6570;&#x4F7F;&#x7528;<code>{$self}&#xFF09;</code>
-</li>
-<li>cycle&#xFF1A;&#x6267;&#x884C;&#x5468;&#x671F;&#xFF0C;&#x5355;&#x4F4D;&#xFF08;&#x5C0F;&#x65F6;&#xFF09;&#xFF0C;&#x8868;&#x793A;<code>$cycle</code>&#x5C0F;&#x65F6;&#x5185;&#x6700;&#x591A;&#x6267;&#x884C;<code>$max</code>&#x6B21;
-</li>
-<li>max&#xFF1A;&#x5355;&#x4E2A;&#x5468;&#x671F;&#x5185;&#x7684;&#x6700;&#x5927;&#x6267;&#x884C;&#x6B21;&#x6570;&#xFF08;<code>$cycle</code>&#x548C;<code>$max</code>&#x5FC5;&#x987B;&#x540C;&#x65F6;&#x5B9A;&#x4E49;&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6548;&#xFF09;
-</li></ul>
+                                <h2 id="&#x6D4B;&#x8BD5;behavior">&#x6D4B;&#x8BD5;Behavior</h2><p>Behavior &#x9075;&#x5FAA;TP&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x65B9;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x5BF9;&#x5E94;&#x7684;Behavior &#x5E76;&#x586B;&#x5199;&#x6A21;&#x62DF;&#x53C2;&#x6570;&#x8C03;&#x7528;run()&#x65B9;&#x6CD5;&#x5373;&#x53EF;</p><p>&#x6837;&#x4F8B;&#xFF1A;</p><p>&#x884C;&#x4E3A;<code>PaidChongzhiOrderBehavior.class.php</code></p><pre><code class="lang-php"><span class="hljs-comment">/**
+ * &#x652F;&#x4ED8;&#x5145;&#x503C;&#x8BA2;&#x5355;&#x540E;
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PaidChongzhiOrderBehavior</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseBehavior</span>  </span>{
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">run</span><span class="hljs-params">(PaidOrderBehaviorParam &amp;$param)</span> </span>{
+        <span class="hljs-keyword">parent</span>::run($param);
+
+        <span class="hljs-comment">//&#x4F60;&#x7684;&#x4EE3;&#x7801;</span>
+    }
+}</code></pre>
+<p>Behavior&#x53C2;&#x6570;&#x7C7B;<code>PaidOrderBehaviorParam.class.php</code></p><pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PaidOrderBehaviorParam</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseBehaviorParam</span> </span>{
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> &#x8BA2;&#x5355;&#x53F7;
+     */</span>
+    <span class="hljs-keyword">public</span> $orderid;
+
+}</code></pre>
+<p>&#x8C03;&#x7528;&#x6837;&#x4F8B;&#xFF1A;</p><pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">Payment</span>\<span class="hljs-title">Controller</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Common</span>\<span class="hljs-title">Controller</span>\<span class="hljs-title">Base</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Payment</span>\<span class="hljs-title">Behavior</span>\<span class="hljs-title">PaidChongzhiOrderBehavior</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Payment</span>\<span class="hljs-title">BehaviorParam</span>\<span class="hljs-title">PaidOrderBehaviorParam</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Base</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">testPaidChongzhiOrderBehavior</span><span class="hljs-params">()</span></span>{
+        $b = <span class="hljs-keyword">new</span> PaidChongzhiOrderBehavior();
+        $bp = PaidOrderBehaviorParam::create([<span class="hljs-string">&apos;orderid&apos;</span> =&gt; <span class="hljs-string">&apos;2016111011144970299&apos;</span>]);
+        $b-&gt;run($bp);
+    }
+}</code></pre>
+<h3 id="&#x5EFA;&#x8BAE;">&#x5EFA;&#x8BAE;</h3><p>&#x4E3A;&#x6BCF;&#x4E2A;&#x884C;&#x4E3A;&#x90FD;&#x914D;&#x5408;&#x5199;&#x4E00;&#x4E2A; PaidOrderBehaviorParam &#xFF0C;&#x8FD9;&#x6837;&#x660E;&#x786E;&#x4E86;&#xFF0C;&#x6267;&#x884C;&#x8BE5;&#x884C;&#x4E3A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x65F6;
+&#x5230;&#x5E95;&#x542B;&#x6709;&#x54EA;&#x4E00;&#x4E9B;&#x53C2;&#x6570;</p><p><code>BaseBehavior.class</code>&#x53C2;&#x8003;&#x5982;&#x4E0B;&#xFF08;&#x672A;&#x6765;&#x5C06;&#x4F1A;&#x5185;&#x7F6E;&#x5230; CMS &#x4E2D;&#xFF09;&#xFF1A;</p><pre><code class="lang-php">
+<span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">Common</span>\<span class="hljs-title">BehaviorParam</span>;
+<span class="hljs-comment">/**
+ * &#x884C;&#x4E3A;&#x56DE;&#x8C03;&#x53C2;&#x6570;
+ *
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseBehaviorParam</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__get</span><span class="hljs-params">($name)</span> </span>{
+        <span class="hljs-keyword">return</span> $this-&gt;$name;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__set</span><span class="hljs-params">($name, $value)</span> </span>{
+        $this-&gt;$name = $value;
+    }
+    <span class="hljs-comment">/**
+     * &#x521B;&#x5EFA;&#x53C2;&#x6570;&#x5B9E;&#x4F8B;
+     * <span class="hljs-doctag">@param</span> array $data
+     * <span class="hljs-doctag">@return</span> mixed
+     */</span>
+    <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">create</span><span class="hljs-params">(array $data)</span> </span>{
+        $class = <span class="hljs-keyword">__CLASS__</span>;
+        $param = <span class="hljs-keyword">new</span> $class;
+        <span class="hljs-keyword">foreach</span> ($data <span class="hljs-keyword">as</span> $key =&gt; $val){
+            <span class="hljs-keyword">if</span>(<span class="hljs-keyword">empty</span>($param-&gt;$key)){
+                $param-&gt;$key = $val;
+            }
+        }
+        <span class="hljs-keyword">return</span> $param;
+    }
+}</code></pre>
 
                             </div>
                             
@@ -569,7 +614,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"行为规则","level":"2.2.1","depth":2,"next":{"title":"使用方法","level":"2.2.2","depth":2,"path":"guide/behaivor/usage.md","ref":"guide/behaivor/usage.md","articles":[]},"previous":{"title":"行为管理","level":"2.2","depth":1,"path":"guide/behaivor/readme.md","ref":"guide/behaivor/readme.md","articles":[{"title":"行为规则","level":"2.2.1","depth":2,"path":"guide/behaivor/rule.md","ref":"guide/behaivor/rule.md","articles":[]},{"title":"使用方法","level":"2.2.2","depth":2,"path":"guide/behaivor/usage.md","ref":"guide/behaivor/usage.md","articles":[]},{"title":"测试Behaivor","level":"2.2.3","depth":2,"path":"guide/behaivor/testing_behaivor.md","ref":"guide/behaivor/testing_behaivor.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"guide/behaivor/rule.md","mtime":"2016-11-13T16:17:49.560Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-13T16:18:52.702Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"测试Behaivor","level":"2.2.3","depth":2,"next":{"title":"区域","level":"3.1","depth":1,"path":"module/area/README.md","ref":"module/area/README.md","articles":[{"title":"中国区域","level":"3.1.1","depth":2,"path":"module/area/area.md","ref":"module/area/area.md","articles":[]},{"title":"中国高校","level":"3.1.2","depth":2,"path":"module/area/school.md","ref":"module/area/school.md","articles":[]}]},"previous":{"title":"使用方法","level":"2.2.2","depth":2,"path":"guide/behaivor/usage.md","ref":"guide/behaivor/usage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"guide/behaivor/testing_behaivor.md","mtime":"2016-11-13T16:17:49.560Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-13T16:18:52.702Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 
