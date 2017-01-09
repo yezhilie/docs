@@ -1,0 +1,990 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>商品详情 · ZtbCMS</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+
+    
+    <link rel="next" href="../../sms.html" />
+    
+    
+    <link rel="prev" href="goods_list.html" />
+    
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0c94f14dc8eb5aafbbb35de1766e5ec8";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    </head>
+    <body>
+        
+<div class="gb-page-wrapper">
+    <header class="gb-page-header">
+        <div class="container">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+            <a href="../../.." class="logo">
+                <img src="../../../gitbook/images/logo.png">
+                <h1>ZtbCMS</h1>
+            </a>
+
+            
+
+            
+
+
+
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/module/shop/goods/goods_info.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+    修正当前页
+</a>
+
+<a href="https://github.com/ztbcms/ztbcms" class="btn btn-link pull-right hidden-xs">
+    <img src="https://img.shields.io/github/release/ztbcms/ztbcms.svg?maxAge=36000" alt="version">
+</a>
+<!--
+<a href="../../../faq.md" class="btn btn-link pull-right hidden-xs">
+    F.A.Q
+</a>
+-->
+
+<!--<a href="https://github.com/ztbcms/ztbcms" target="_blank" class="btn btn-link pull-right hidden-xs">
+    3.0.0
+</a>-->
+
+
+
+        
+        </div>
+    </header>
+
+    <div class="gb-page-body">
+        <div class="gb-page-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+
+
+
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">开始使用</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../" class="list-group-item ">
+        
+
+            
+
+            
+
+            概述
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../setup.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            环境搭建&安装
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">开发指南</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../guide/template/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            模板
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../guide/behaivor/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            行为管理
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">模块</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../area/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            区域
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            商城
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="../user/" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            用户管理
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../cart/" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            购物车管理
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../order/" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            订单管理
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="./" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            商品
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="goods_list.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            商品列表
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="goods_info.html" class="list-group-item active">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            商品详情
+
+        
+        </a>
+        
+
+        
+    
+
+        
+    
+
+        
+    
+        
+        <a href="../../sms.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            短信
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../cron.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            计划任务
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../transport/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            数据导入导出
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">附录</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../extra/system_function.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            系统函数
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">最佳实践</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../best_practic/dev_tips.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            开发Tips汇总
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../best_practic/ztbcms_storage_engine.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            数据库的存储引擎
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../best_practic/behavior_manage.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            行为管理最佳实践
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../../best_practic/performance_optimization.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            性能优化
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">使用案例</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../../case.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            案例
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+
+
+
+                    </div>
+                    <div class="col-md-9">
+                        
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                            
+                            <div class="gb-markdown book-page-inner">
+                                <h3 id="&#x5546;&#x57CE;-&#x83B7;&#x53D6;&#x5546;&#x54C1;&#x5217;&#x8868;">&#x5546;&#x57CE;-&#x83B7;&#x53D6;&#x5546;&#x54C1;&#x5217;&#x8868;</h3><h4 id="request">request</h4><p><strong>method</strong> &#xFF1A;get</p><p><strong>URL</strong>&#xFF1A; <code>index.php?g=Shop&amp;m=GoodsApi&amp;a=goods_list</code></p><table>
+<thead>
+<tr><th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr></thead><tbody>
+<tr><td>goods_id</td>
+<td>int</td>
+<td>&#x5426;</td>
+<td>&#x5546;&#x54C1;id</td>
+</tr></tbody></table>
+
+<h4 id="response">response</h4><pre><code>{
+  &quot;info&quot;: {
+    &quot;goods_info&quot;: {
+      &quot;goods_id&quot;: &quot;140&quot;,
+      &quot;cat_id&quot;: &quot;123&quot;,
+      &quot;extend_cat_id&quot;: &quot;0&quot;,
+      &quot;goods_sn&quot;: &quot;TP0000140&quot;,
+      &quot;goods_name&quot;: &quot;Apple iPhone 6s 16GB &#x73AB;&#x7470;&#x91D1;&#x8272; &#x79FB;&#x52A8;&#x8054;&#x901A;&#x7535;&#x4FE1;4G&#x624B;&#x673A;&quot;,
+      &quot;click_count&quot;: &quot;39&quot;,
+      &quot;brand_id&quot;: &quot;0&quot;,
+      &quot;store_count&quot;: &quot;1000&quot;,
+      &quot;comment_count&quot;: &quot;0&quot;,
+      &quot;weight&quot;: &quot;500&quot;,
+      &quot;market_price&quot;: &quot;4958.00&quot;,
+      &quot;shop_price&quot;: &quot;4858.00&quot;,
+      &quot;cost_price&quot;: &quot;0.00&quot;,
+      &quot;keywords&quot;: &quot;&quot;,
+      &quot;goods_remark&quot;: &quot;&quot;,
+      &quot;goods_content&quot;: &quot;&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;/Public/upload/goods/2016/04-22/5719844a174d0.jpg&amp;quot; style=&amp;quot;float:none;&amp;quot; title=&amp;quot;000000000134003091_1_800x800.jpg&amp;quot;/&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;/Public/upload/goods/2016/04-22/5719844a2c06c.jpg&amp;quot; style=&amp;quot;float:none;&amp;quot; title=&amp;quot;000000000134003091_2_800x800.jpg&amp;quot;/&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;/Public/upload/goods/2016/04-22/5719844a3bd54.jpg&amp;quot; style=&amp;quot;float:none;&amp;quot; title=&amp;quot;000000000134003091_3_800x800.jpg&amp;quot;/&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;/Public/upload/goods/2016/04-22/5719844a4ca6e.jpg&amp;quot; style=&amp;quot;float:none;&amp;quot; title=&amp;quot;000000000134003091_4_800x800.jpg&amp;quot;/&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;/Public/upload/goods/2016/04-22/5719844a61cbd.jpg&amp;quot; style=&amp;quot;float:none;&amp;quot; title=&amp;quot;000000000134003091_5_800x800.jpg&amp;quot;/&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;/p&amp;gt;&quot;,
+      &quot;original_img&quot;: &quot;/Public/upload/goods/2016/04-22/5719843a87434.jpg&quot;,
+      &quot;is_real&quot;: &quot;1&quot;,
+      &quot;is_on_sale&quot;: &quot;1&quot;,
+      &quot;is_free_shipping&quot;: &quot;0&quot;,
+      &quot;on_time&quot;: &quot;1461290389&quot;,
+      &quot;sort&quot;: &quot;50&quot;,
+      &quot;is_recommend&quot;: &quot;1&quot;,
+      &quot;is_new&quot;: &quot;0&quot;,
+      &quot;is_hot&quot;: &quot;1&quot;,
+      &quot;last_update&quot;: &quot;0&quot;,
+      &quot;goods_type&quot;: &quot;4&quot;,
+      &quot;spec_type&quot;: &quot;4&quot;,
+      &quot;give_integral&quot;: &quot;0&quot;,
+      &quot;exchange_integral&quot;: &quot;0&quot;,
+      &quot;suppliers_id&quot;: &quot;0&quot;,
+      &quot;sales_sum&quot;: &quot;0&quot;,
+      &quot;prom_type&quot;: &quot;3&quot;,
+      &quot;prom_id&quot;: &quot;1&quot;,
+      &quot;commission&quot;: &quot;0.00&quot;,
+      &quot;spu&quot;: &quot;&quot;,
+      &quot;sku&quot;: &quot;&quot;,
+      &quot;shipping_area_ids&quot;: &quot;&quot;
+    },
+    &quot;goods_images_list&quot;: [
+      {
+        &quot;img_id&quot;: &quot;522&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;image_url&quot;: &quot;/Public/upload/goods/2016/04-22/5719843a87434.jpg&quot;
+      },
+      {
+        &quot;img_id&quot;: &quot;523&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;image_url&quot;: &quot;/Public/upload/goods/2016/04-22/57198456a2514.jpg&quot;
+      },
+      {
+        &quot;img_id&quot;: &quot;524&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;image_url&quot;: &quot;/Public/upload/goods/2016/04-22/57198456932b4.jpg&quot;
+      },
+      {
+        &quot;img_id&quot;: &quot;525&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;image_url&quot;: &quot;/Public/upload/goods/2016/04-22/57198456817bf.jpg&quot;
+      },
+      {
+        &quot;img_id&quot;: &quot;526&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;image_url&quot;: &quot;/Public/upload/goods/2016/04-22/57198455d2e1b.jpg&quot;
+      }
+    ],
+    &quot;goods_attribute&quot;: {
+      &quot;56&quot;: &quot;&#x7F51;&#x7EDC;&#x5236;&#x5F0F;&quot;,
+      &quot;57&quot;: &quot;&#x652F;&#x6301;&#x9891;&#x7387;/&#x7F51;&#x7EDC;&#x9891;&#x7387;&quot;,
+      &quot;58&quot;: &quot;&#x5C3A;&#x5BF8;&#x4F53;&#x79EF;&quot;,
+      &quot;59&quot;: &quot;&#x5916;&#x89C2;&#x6837;&#x5F0F;/&#x624B;&#x673A;&#x7C7B;&#x578B;&quot;,
+      &quot;60&quot;: &quot;&#x4E3B;&#x5C4F;&#x53C2;&#x6570;/&#x5185;&#x5C4F;&#x53C2;&#x6570;&quot;,
+      &quot;61&quot;: &quot;&#x526F;&#x5C4F;&#x53C2;&#x6570;/&#x5916;&#x5C4F;&#x53C2;&#x6570;&quot;,
+      &quot;62&quot;: &quot;&#x6E05;&#x6670;&#x5EA6;&quot;,
+      &quot;63&quot;: &quot;&#x8272;&#x6570;/&#x7070;&#x5EA6;&quot;,
+      &quot;64&quot;: &quot;&#x957F;&#x5EA6;&quot;,
+      &quot;65&quot;: &quot;&#x5BBD;&#x5EA6;&quot;,
+      &quot;66&quot;: &quot;&#x539A;&#x5EA6;&quot;,
+      &quot;67&quot;: &quot;&#x5C4F;&#x5E55;&#x6750;&#x8D28;&quot;,
+      &quot;68&quot;: &quot;&#x5185;&#x5B58;&#x5BB9;&#x91CF;&quot;,
+      &quot;69&quot;: &quot;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&quot;,
+      &quot;70&quot;: &quot;&#x901A;&#x8BDD;&#x65F6;&#x95F4;&quot;,
+      &quot;71&quot;: &quot;&#x5F85;&#x673A;&#x65F6;&#x95F4;&quot;,
+      &quot;72&quot;: &quot;&#x6807;&#x51C6;&#x914D;&#x7F6E;&quot;,
+      &quot;73&quot;: &quot;WAP&#x4E0A;&#x7F51;&quot;,
+      &quot;74&quot;: &quot;&#x6570;&#x636E;&#x4E1A;&#x52A1;&quot;,
+      &quot;75&quot;: &quot;&#x5929;&#x7EBF;&#x4F4D;&#x7F6E;&quot;,
+      &quot;76&quot;: &quot;&#x968F;&#x673A;&#x914D;&#x4EF6;&quot;,
+      &quot;77&quot;: &quot;&#x94C3;&#x58F0;&quot;,
+      &quot;78&quot;: &quot;&#x6444;&#x50CF;&#x5934;&quot;,
+      &quot;79&quot;: &quot;&#x5F69;&#x4FE1;/&#x5F69;e&quot;,
+      &quot;80&quot;: &quot;&#x7EA2;&#x5916;/&#x84DD;&#x7259;&quot;,
+      &quot;81&quot;: &quot;&#x4EF7;&#x683C;&#x7B49;&#x7EA7;&quot;
+    },
+    &quot;goods_attr_list&quot;: [
+      {
+        &quot;goods_attr_id&quot;: &quot;949&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;56&quot;,
+        &quot;attr_value&quot;: &quot;&#x79FB;&#x52A8;4G(TD-LTE),&#x8054;&#x901A;4G(TD-LTE),&#x7535;&#x4FE1;4G(TD-LTE),&#x8054;&#x901A;4G&#xFF08;FDD-LTE&#xFF09;,&#x7535;&#x4FE1;4G&#xFF08;FDD-LTE&#xFF09;&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;950&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;57&quot;,
+        &quot;attr_value&quot;: &quot;FDD-LTE/TD-LTE/WCDMA/TD-SCDMA/CDMA2000/GSM&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;951&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;58&quot;,
+        &quot;attr_value&quot;: &quot;138.3*67.1*7.1&#x6BEB;&#x7C73;&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;952&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;59&quot;,
+        &quot;attr_value&quot;: &quot;&#x76F4;&#x677F;&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;953&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;62&quot;,
+        &quot;attr_value&quot;: &quot;1334&#xD7;750&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;954&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;64&quot;,
+        &quot;attr_value&quot;: &quot;138.3mm&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;955&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;65&quot;,
+        &quot;attr_value&quot;: &quot;67.1mm&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;956&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;66&quot;,
+        &quot;attr_value&quot;: &quot;7.1mm&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;957&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;68&quot;,
+        &quot;attr_value&quot;: &quot;32G&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;958&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;69&quot;,
+        &quot;attr_value&quot;: &quot;ios&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;959&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;75&quot;,
+        &quot;attr_value&quot;: &quot;&#x5185;&#x7F6E;&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;960&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;78&quot;,
+        &quot;attr_value&quot;: &quot;1200&#x4E07;&#x50CF;&#x7D20;&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;961&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;79&quot;,
+        &quot;attr_value&quot;: &quot;&#x652F;&#x6301;&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      },
+      {
+        &quot;goods_attr_id&quot;: &quot;962&quot;,
+        &quot;goods_id&quot;: &quot;140&quot;,
+        &quot;attr_id&quot;: &quot;81&quot;,
+        &quot;attr_value&quot;: &quot;&#x9AD8;&#x4EF7;&#x673A;&quot;,
+        &quot;attr_price&quot;: &quot;0&quot;
+      }
+    ],
+    &quot;spec_goods_price&quot;: {
+      &quot;11_28_100&quot;: {
+        &quot;key&quot;: &quot;11_28_100&quot;,
+        &quot;price&quot;: &quot;6858.00&quot;,
+        &quot;store_count&quot;: &quot;100&quot;
+      },
+      &quot;11_28_57&quot;: {
+        &quot;key&quot;: &quot;11_28_57&quot;,
+        &quot;price&quot;: &quot;6000.00&quot;,
+        &quot;store_count&quot;: &quot;100&quot;
+      },
+      &quot;11_28_55&quot;: {
+        &quot;key&quot;: &quot;11_28_55&quot;,
+        &quot;price&quot;: &quot;4858.00&quot;,
+        &quot;store_count&quot;: &quot;100&quot;
+      },
+      &quot;11_13_100&quot;: {
+        &quot;key&quot;: &quot;11_13_100&quot;,
+        &quot;price&quot;: &quot;6000.00&quot;,
+        &quot;store_count&quot;: &quot;100&quot;
+      },
+      &quot;11_13_57&quot;: {
+        &quot;key&quot;: &quot;11_13_57&quot;,
+        &quot;price&quot;: &quot;5868.00&quot;,
+        &quot;store_count&quot;: &quot;100&quot;
+      },
+      &quot;11_13_55&quot;: {
+        &quot;key&quot;: &quot;11_13_55&quot;,
+        &quot;price&quot;: &quot;4858.00&quot;,
+        &quot;store_count&quot;: &quot;100&quot;
+      }
+    },
+    &quot;filter_spec&quot;: {
+      &quot;&#x7F51;&#x7EDC;&quot;: [
+        {
+          &quot;item_id&quot;: &quot;11&quot;,
+          &quot;item&quot;: &quot;4G&quot;,
+          &quot;src&quot;: null
+        }
+      ],
+      &quot;&#x5185;&#x5B58;&quot;: [
+        {
+          &quot;item_id&quot;: &quot;13&quot;,
+          &quot;item&quot;: &quot;16G&quot;,
+          &quot;src&quot;: null
+        },
+        {
+          &quot;item_id&quot;: &quot;28&quot;,
+          &quot;item&quot;: &quot;32G&quot;,
+          &quot;src&quot;: null
+        }
+      ],
+      &quot;&#x989C;&#x8272;&quot;: [
+        {
+          &quot;item_id&quot;: &quot;55&quot;,
+          &quot;item&quot;: &quot;&#x9ED1;&#x8272;&quot;,
+          &quot;src&quot;: null
+        },
+        {
+          &quot;item_id&quot;: &quot;57&quot;,
+          &quot;item&quot;: &quot;&#x91D1;&#x8272;&quot;,
+          &quot;src&quot;: null
+        },
+        {
+          &quot;item_id&quot;: &quot;100&quot;,
+          &quot;item&quot;: &quot;&#x73AB;&#x7470;&#x91D1;&quot;,
+          &quot;src&quot;: null
+        }
+      ]
+    }
+  },
+  &quot;status&quot;: 1,
+  &quot;url&quot;: &quot;&quot;,
+  &quot;state&quot;: &quot;success&quot;
+}</code></pre>
+<table>
+<thead>
+<tr><th>&#x5B57;&#x6BB5;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr></thead><tbody>
+<tr><td>goods_info</td>
+<td>array</td>
+<td>&#x5546;&#x54C1;&#x57FA;&#x672C;&#x4FE1;&#x606F;</td>
+</tr><tr><td>goods_images_list</td>
+<td>array</td>
+<td>&#x5546;&#x54C1;&#x56FE;&#x518C;</td>
+</tr><tr><td>goods_attribute</td>
+<td>array</td>
+<td>&#x5546;&#x54C1;&#x6240;&#x5C5E;&#x5C5E;&#x6027;</td>
+</tr><tr><td>goods_attr_list</td>
+<td>array</td>
+<td>&#x5546;&#x54C1;&#x62E5;&#x6709;&#x5C5E;&#x6027;&#x503C;</td>
+</tr><tr><td>spec_goods_price</td>
+<td>array</td>
+<td>&#x5546;&#x54C1;&#x89C4;&#x683C;&#x5BF9;&#x5E94;&#x7684;&#x4EF7;&#x683C;</td>
+</tr><tr><td>filter_spec</td>
+<td>array</td>
+<td>&#x5546;&#x54C1;&#x62E5;&#x6709;&#x7684;&#x89C4;&#x683C;</td>
+</tr></tbody></table>
+
+<p><strong>ps: &#x5931;&#x8D25;&#x8FD4;&#x56DE; status != 1,&#x5177;&#x4F53;&#x770B;msg&#x4FE1;&#x606F;</strong></p><p><strong>&#x6536;&#x8D27;&#x5730;&#x5740;&#x8FD9;&#x91CC;&#x5173;&#x7CFB;&#x5230;&#x7701;&#x5E02;&#x8054;&#x52A8;&#x6548;&#x679C;</strong></p>
+                            </div>
+                            
+                        
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gb-page-footer">
+        <div class="container">
+            <ul class="menu">
+                <li class="pull-right">
+                    <span class="service-info">Copyright ZtbCMS 2017</span>
+                </li>
+                <li>
+                    <a href="#">Return to the top</a>
+                </li>
+                <li>
+                    <a href="#">Updated Jan 9th 17</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<script src="../../../gitbook/gitbook.js"></script>
+
+    
+    <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+    
+
+    
+    <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+    
+
+    
+    <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+    
+
+<script>
+(function() {
+    gitbook.page.hasChanged({"page":{"title":"商品详情","level":"3.2.4.2","depth":3,"next":{"title":"短信","level":"3.3","depth":1,"path":"module/sms.md","ref":"module/sms.md","articles":[]},"previous":{"title":"商品列表","level":"3.2.4.1","depth":3,"path":"module/shop/goods/goods_list.md","ref":"module/shop/goods/goods_list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"module/shop/goods/goods_info.md","mtime":"2017-01-09T03:27:04.557Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-01-09T03:28:06.813Z"},"basePath":"../../..","book":{"language":""}});
+})();
+</script>
+
+        
+    </body>
+</html>
+

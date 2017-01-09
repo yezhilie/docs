@@ -39,6 +39,9 @@
 <url> <loc>https://www.ztbcms.com/module/shop/order/order_list.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/module/shop/order/order_detail.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/module/shop/order/order_create.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://www.ztbcms.com/module/shop/goods/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://www.ztbcms.com/module/shop/goods/goods_list.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://www.ztbcms.com/module/shop/goods/goods_info.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/module/sms.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/module/cron.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/module/transport/readme.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>

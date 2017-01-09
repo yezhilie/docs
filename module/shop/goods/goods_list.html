@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>用户注册 · ZtbCMS</title>
+        <title>商品列表 · ZtbCMS</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,7 +57,7 @@
 
 
     
-    <link rel="next" href="user_login.html" />
+    <link rel="next" href="goods_info.html" />
     
     
     <link rel="prev" href="./" />
@@ -98,7 +98,7 @@
 
 
 
-<a href="https://github.com/ztbcms/docs/blob/develop/docs/module/shop/user/user_register.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/module/shop/goods/goods_list.md" target="_blank" class="btn btn-link pull-right hidden-xs">
     修正当前页
 </a>
 
@@ -275,7 +275,7 @@
         
     
         
-        <a href="./" class="list-group-item ">
+        <a href="../user/" class="list-group-item ">
         
 
             
@@ -283,7 +283,7 @@
             
 
             
-            <i class="octicon octicon-chevron-down"></i>
+            <i class="octicon octicon-chevron-right"></i>
             
 
             用户管理
@@ -291,150 +291,6 @@
         
         </a>
         
-
-        
-        
-    
-        
-        <a href="user_register.html" class="list-group-item active">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            用户注册
-
-        
-        </a>
-        
-
-        
-    
-        
-        <a href="user_login.html" class="list-group-item ">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            用户登录
-
-        
-        </a>
-        
-
-        
-    
-        
-        <a href="user_address_list.html" class="list-group-item ">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            收货地址
-
-        
-        </a>
-        
-
-        
-    
-        
-        <a href="user_address_add.html" class="list-group-item ">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            添加收货地址
-
-        
-        </a>
-        
-
-        
-    
-        
-        <a href="user_address_edit.html" class="list-group-item ">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            编辑收货地址
-
-        
-        </a>
-        
-
-        
-    
-        
-        <a href="user_address_delete.html" class="list-group-item ">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            编辑收货地址
-
-        
-        </a>
-        
-
-        
-    
-        
-        <a href="user_address_default.html" class="list-group-item ">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            设置默认收货地址
-
-        
-        </a>
-        
-
-        
-    
 
         
     
@@ -479,7 +335,7 @@
         
     
         
-        <a href="../goods/" class="list-group-item ">
+        <a href="./" class="list-group-item ">
         
 
             
@@ -487,7 +343,7 @@
             
 
             
-            <i class="octicon octicon-chevron-right"></i>
+            <i class="octicon octicon-chevron-down"></i>
             
 
             商品
@@ -495,6 +351,50 @@
         
         </a>
         
+
+        
+        
+    
+        
+        <a href="goods_list.html" class="list-group-item active">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            商品列表
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="goods_info.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            商品详情
+
+        
+        </a>
+        
+
+        
+    
 
         
     
@@ -706,67 +606,136 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                <h3 id="&#x7528;&#x6237;-&#x6CE8;&#x518C;">&#x7528;&#x6237;-&#x6CE8;&#x518C;</h3><h4 id="request">request</h4><p><strong>method</strong> &#xFF1A;post</p><p><strong>URL</strong>&#xFF1A; <code>index.php?g=Shop&amp;m=UserApi&amp;a=register</code></p><table>
+                                <h3 id="&#x5546;&#x57CE;-&#x83B7;&#x53D6;&#x5546;&#x54C1;&#x5217;&#x8868;">&#x5546;&#x57CE;-&#x83B7;&#x53D6;&#x5546;&#x54C1;&#x5217;&#x8868;</h3><h4 id="request">request</h4><p><strong>method</strong> &#xFF1A;get</p><p><strong>URL</strong>&#xFF1A; <code>index.php?g=Shop&amp;m=GoodsApi&amp;a=add_cart</code></p><table>
 <thead>
 <tr><th>&#x5B57;&#x6BB5;</th>
 <th>&#x7C7B;&#x578B;</th>
 <th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
 <th>&#x63CF;&#x8FF0;</th>
 </tr></thead><tbody>
-<tr><td>username</td>
-<td>varchar</td>
-<td>&#x662F;</td>
-<td>&#x7528;&#x6237;&#x6CE8;&#x518C;&#x7684;&#x90AE;&#x7BB1;&#x6216;&#x8005;&#x624B;&#x673A;</td>
-</tr><tr><td>password</td>
-<td>varchar</td>
-<td>&#x662F;</td>
-<td>&#x7528;&#x6237;&#x6CE8;&#x518C;&#x5BC6;&#x7801;</td>
-</tr><tr><td>password2</td>
-<td>varchar</td>
-<td>&#x662F;</td>
-<td>&#x7528;&#x6237;&#x6CE8;&#x518C;&#x786E;&#x8BA4;&#x5BC6;&#x7801;</td>
+<tr><td>page</td>
+<td>int</td>
+<td>&#x5426;</td>
+<td>&#x5F53;&#x524D;&#x9875;&#x6570;</td>
+</tr><tr><td>limit</td>
+<td>int</td>
+<td>&#x5426;</td>
+<td>&#x6BCF;&#x9875;&#x663E;&#x793A;&#x6570;&#x91CF;</td>
+</tr><tr><td>is_recommend</td>
+<td>bool</td>
+<td>&#x5426;</td>
+<td>&#x662F;&#x5426;&#x63A8;&#x8350;</td>
+</tr><tr><td>is_new</td>
+<td>bool</td>
+<td>&#x5426;</td>
+<td>&#x662F;&#x5426;&#x65B0;&#x54C1;</td>
+</tr><tr><td>is_hot</td>
+<td>bool</td>
+<td>&#x5426;</td>
+<td>&#x662F;&#x5426;&#x70ED;&#x9500;</td>
+</tr><tr><td>catid</td>
+<td>int</td>
+<td>&#x5426;</td>
+<td>&#x5546;&#x54C1;&#x6240;&#x5C5E;&#x680F;&#x76EE;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x5168;&#x90E8;</td>
+</tr><tr><td>order</td>
+<td>string</td>
+<td>&#x5217;&#x8868;&#x7684;&#x6392;&#x5E8F;&#x65B9;&#x5F0F; eg : id desc</td>
 </tr></tbody></table>
 
 <h4 id="response">response</h4><pre><code>{
   &quot;info&quot;: {
-    &quot;userid&quot;: &quot;1&quot;,
-    &quot;email&quot;: &quot;&quot;,
-    &quot;sex&quot;: &quot;0&quot;,
-    &quot;birthday&quot;: &quot;0&quot;,
-    &quot;user_money&quot;: &quot;0.00&quot;,
-    &quot;frozen_money&quot;: &quot;0.00&quot;,
-    &quot;distribut_money&quot;: &quot;0.00&quot;,
-    &quot;pay_points&quot;: &quot;0&quot;,
-    &quot;address_id&quot;: &quot;0&quot;,
-    &quot;reg_time&quot;: &quot;1483371522&quot;,
-    &quot;last_login&quot;: &quot;0&quot;,
-    &quot;last_ip&quot;: &quot;&quot;,
-    &quot;qq&quot;: &quot;&quot;,
-    &quot;mobile&quot;: &quot;15088132444&quot;,
-    &quot;mobile_validated&quot;: &quot;1&quot;,
-    &quot;oauth&quot;: &quot;&quot;,
-    &quot;openid&quot;: &quot;&quot;,
-    &quot;head_pic&quot;: &quot;&quot;,
-    &quot;province&quot;: &quot;0&quot;,
-    &quot;city&quot;: &quot;0&quot;,
-    &quot;district&quot;: &quot;0&quot;,
-    &quot;email_validated&quot;: &quot;0&quot;,
-    &quot;nickname&quot;: &quot;15088132444&quot;,
-    &quot;level&quot;: &quot;0&quot;,
-    &quot;discount&quot;: &quot;0.00&quot;,
-    &quot;total_amount&quot;: &quot;0.00&quot;,
-    &quot;is_lock&quot;: &quot;0&quot;,
-    &quot;is_distribut&quot;: &quot;0&quot;,
-    &quot;first_leader&quot;: &quot;0&quot;,
-    &quot;second_leader&quot;: &quot;0&quot;,
-    &quot;third_leader&quot;: &quot;0&quot;,
-    &quot;token&quot;: &quot;9ce184919872f6be2c3328792dcde271&quot;
+    &quot;goods_list&quot;: [
+      {
+        &quot;goods_id&quot;: &quot;1&quot;,
+        &quot;cat_id&quot;: &quot;12&quot;,
+        &quot;extend_cat_id&quot;: &quot;0&quot;,
+        &quot;goods_sn&quot;: &quot;TP000000&quot;,
+        &quot;goods_name&quot;: &quot;Apple iPhone 6s Plus 16G &#x73AB;&#x7470;&#x91D1; &#x79FB;&#x52A8;&#x8054;&#x901A;&#x7535;&#x4FE1;4G&#x624B;&#x673A;&quot;,
+        &quot;click_count&quot;: &quot;510&quot;,
+        &quot;brand_id&quot;: &quot;11&quot;,
+        &quot;store_count&quot;: &quot;299&quot;,
+        &quot;comment_count&quot;: &quot;5&quot;,
+        &quot;weight&quot;: &quot;150&quot;,
+        &quot;market_price&quot;: &quot;6107.00&quot;,
+        &quot;shop_price&quot;: &quot;6007.00&quot;,
+        &quot;cost_price&quot;: &quot;0.00&quot;,
+        &quot;keywords&quot;: &quot;LG 3g 876 &#x652F;&#x6301; &#x53CC;&#x6A21; 2008&#x5E74;04&#x6708; &#x7070;&#x8272; GSM,850,900,1800,1900&quot;,
+        &quot;goods_remark&quot;: &quot;&#x9009;&#x62E9;&#x3010;&#x8054;&#x901A;&#x5408;&#x7EA6;&#x673A;0&#x5143;&#x8D2D;&#x673A;&#x3011;&#xFF0C;&#x8D2D;&#x673A;&#x6B3E;&#x4EC5;&#x9700;4066\r\n&#x9009;&#x62E9;&#x3010;&#x79FB;&#x52A8;&#x5408;&#x7EA6;&#x673A;&#x3011;&#xFF0C;&#x952F;&#x60E0;5588&#xFF0C;&#x4E0D;&#x6362;&#x53F7;&#xFF0C;&#x8D2D;&#x673A;&#x5165;&#x7F51;&#x8FD4;&#x9AD8;&#x989D;&#x8BDD;&#x8D39;~\r\n&#x9009;&#x3010;&#x7535;&#x4FE1;&#x5408;&#x7EA6;&#x673A;&#x3011;&#xFF0C;&#x4E70;&#x624B;&#x673A;&#x9001;&#x8BDD;&#x8D39;&#xFF01;&#x6FC0;&#x6D3B;&#x5230;&#x8D26;100&#x5143;&#xFF0C;&#x5B9E;&#x4ED8;&#x4F4E;&#x81F3;29&#x5143;/&#x6708;&#xFF0C;&#x6708;&#x4EAB;4GB&#x5927;&#x6D41;&#x91CF;&quot;,
+        &quot;goods_content&quot;: &quot;&amp;lt;p style=&amp;quot;text-align: center;&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;/Public/upload/goods/2016/03-09/56e01a6586cd0.jpg&amp;quot; title=&amp;quot;4.jpg&amp;quot;/&amp;gt;&amp;lt;/p&amp;gt;&quot;,
+        &quot;original_img&quot;: &quot;/Public/upload/goods/2016/03-09/56e01a4088d3b.jpg&quot;,
+        &quot;is_real&quot;: &quot;1&quot;,
+        &quot;is_on_sale&quot;: &quot;1&quot;,
+        &quot;is_free_shipping&quot;: &quot;0&quot;,
+        &quot;on_time&quot;: &quot;1477121173&quot;,
+        &quot;sort&quot;: &quot;54&quot;,
+        &quot;is_recommend&quot;: &quot;1&quot;,
+        &quot;is_new&quot;: &quot;1&quot;,
+        &quot;is_hot&quot;: &quot;1&quot;,
+        &quot;last_update&quot;: &quot;1269589545&quot;,
+        &quot;goods_type&quot;: &quot;4&quot;,
+        &quot;spec_type&quot;: &quot;4&quot;,
+        &quot;give_integral&quot;: &quot;0&quot;,
+        &quot;exchange_integral&quot;: &quot;100&quot;,
+        &quot;suppliers_id&quot;: &quot;0&quot;,
+        &quot;sales_sum&quot;: &quot;0&quot;,
+        &quot;prom_type&quot;: &quot;0&quot;,
+        &quot;prom_id&quot;: &quot;0&quot;,
+        &quot;commission&quot;: &quot;0.00&quot;,
+        &quot;spu&quot;: &quot;&quot;,
+        &quot;sku&quot;: &quot;&quot;,
+        &quot;shipping_area_ids&quot;: &quot;&quot;
+      },
+      {
+        &quot;goods_id&quot;: &quot;39&quot;,
+        &quot;cat_id&quot;: &quot;191&quot;,
+        &quot;extend_cat_id&quot;: &quot;0&quot;,
+        &quot;goods_sn&quot;: &quot;TP0000039&quot;,
+        &quot;goods_name&quot;: &quot;&#x534E;&#x4E3A;&#xFF08;HUAWEI&#xFF09; M2 10.0 &#x5E73;&#x677F;&#x7535;&#x8111; WiFi &#x6708;&#x5149;&#x94F6;&quot;,
+        &quot;click_count&quot;: &quot;39&quot;,
+        &quot;brand_id&quot;: &quot;15&quot;,
+        &quot;store_count&quot;: &quot;1000&quot;,
+        &quot;comment_count&quot;: &quot;3&quot;,
+        &quot;weight&quot;: &quot;1000&quot;,
+        &quot;market_price&quot;: &quot;2388.00&quot;,
+        &quot;shop_price&quot;: &quot;2288.00&quot;,
+        &quot;cost_price&quot;: &quot;0.00&quot;,
+        &quot;keywords&quot;: &quot;&quot;,
+        &quot;goods_remark&quot;: &quot;&#x4ECA;&#x65E5;&#x8D77;&#x5546;&#x57CE;&#x641E;&#x6D3B;&#x52A8;,&#x6CE8;&#x518C;&#x7ACB;&#x9A6C;&#x9001;30&#x5143;&#x4EE3;&#x91D1;&#x5238;,&#x5168;&#x573A;&#x6EE1;69&#x5168;&#x56FD;&#x5305;&#x90AE;,&#x5168;&#x573A;&#x6EE1;299&#x9001;20&#x5143;&#x4F18;&#x60E0;&#x5238;,&#x5168;&#x573A;&#x6EE1;399&#x9001;&#x7535;&#x5F71;&#x7968;,&#x6EE1;999&#x9001;&#x7F8E;&#x56FD;&#x65C5;&#x6E38;&#x666F;&#x70B9;&#x95E8;&#x7968;1&#x5F20;&quot;,
+        &quot;goods_content&quot;: &quot;&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;/Public/upload/goods/2016/01-13/5695b35c538bb.jpg&amp;quot; style=&amp;quot;float:none;&amp;quot; title=&amp;quot;428_428_1452218607027.jpg&amp;quot;/&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;/Public/upload/goods/2016/01-13/5695b35c65802.jpg&amp;quot; style=&amp;quot;float:none;&amp;quot; title=&amp;quot;428_428_1452218609169.jpg&amp;quot;/&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;/Public/upload/goods/2016/01-13/5695b35c7b577.jpg&amp;quot; style=&amp;quot;float:none;&amp;quot; title=&amp;quot;428_428_1452218613383.jpg&amp;quot;/&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;/p&amp;gt;&quot;,
+        &quot;original_img&quot;: &quot;/Public/upload/goods/2016/01-13/5695b2f14616a.jpg&quot;,
+        &quot;is_real&quot;: &quot;1&quot;,
+        &quot;is_on_sale&quot;: &quot;1&quot;,
+        &quot;is_free_shipping&quot;: &quot;0&quot;,
+        &quot;on_time&quot;: &quot;0&quot;,
+        &quot;sort&quot;: &quot;50&quot;,
+        &quot;is_recommend&quot;: &quot;1&quot;,
+        &quot;is_new&quot;: &quot;0&quot;,
+        &quot;is_hot&quot;: &quot;1&quot;,
+        &quot;last_update&quot;: &quot;0&quot;,
+        &quot;goods_type&quot;: &quot;15&quot;,
+        &quot;spec_type&quot;: &quot;15&quot;,
+        &quot;give_integral&quot;: &quot;0&quot;,
+        &quot;exchange_integral&quot;: &quot;100&quot;,
+        &quot;suppliers_id&quot;: &quot;0&quot;,
+        &quot;sales_sum&quot;: &quot;0&quot;,
+        &quot;prom_type&quot;: &quot;0&quot;,
+        &quot;prom_id&quot;: &quot;0&quot;,
+        &quot;commission&quot;: &quot;0.00&quot;,
+        &quot;spu&quot;: &quot;&quot;,
+        &quot;sku&quot;: &quot;&quot;,
+        &quot;shipping_area_ids&quot;: &quot;&quot;
+      }
+      &#x2026;&#x2026;
+    ],
+    &quot;page&quot;: 1,
+    &quot;limit&quot;: 20,
+    &quot;total_count&quot;: &quot;109&quot;
   },
   &quot;status&quot;: 1,
   &quot;url&quot;: &quot;&quot;,
   &quot;state&quot;: &quot;success&quot;
 }</code></pre>
-<p><strong>ps: &#x5931;&#x8D25;&#x8FD4;&#x56DE; status != 1,&#x5177;&#x4F53;&#x770B;msg&#x4FE1;&#x606F;</strong></p><p><strong>&#x767B;&#x5F55;&#x6210;&#x529F;&#x4E4B;&#x540E;&#x8FD4;&#x56DE;&#x7684;shop_user&#x8868;&#x4E0A;&#x7684;&#x4FE1;&#x606F;&#x3002;</strong></p>
+<p><strong>ps: &#x5931;&#x8D25;&#x8FD4;&#x56DE; status != 1,&#x5177;&#x4F53;&#x770B;msg&#x4FE1;&#x606F;</strong></p><p><strong>&#x6536;&#x8D27;&#x5730;&#x5740;&#x8FD9;&#x91CC;&#x5173;&#x7CFB;&#x5230;&#x7701;&#x5E02;&#x8054;&#x52A8;&#x6548;&#x679C;</strong></p>
                             </div>
                             
                         
@@ -829,7 +798,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"用户注册","level":"3.2.1.1","depth":3,"next":{"title":"用户登录","level":"3.2.1.2","depth":3,"path":"module/shop/user/user_login.md","ref":"module/shop/user/user_login.md","articles":[]},"previous":{"title":"用户管理","level":"3.2.1","depth":2,"path":"module/shop/user/README.md","ref":"module/shop/user/README.md","articles":[{"title":"用户注册","level":"3.2.1.1","depth":3,"path":"module/shop/user/user_register.md","ref":"module/shop/user/user_register.md","articles":[]},{"title":"用户登录","level":"3.2.1.2","depth":3,"path":"module/shop/user/user_login.md","ref":"module/shop/user/user_login.md","articles":[]},{"title":"收货地址","level":"3.2.1.3","depth":3,"path":"module/shop/user/user_address_list.md","ref":"module/shop/user/user_address_list.md","articles":[]},{"title":"添加收货地址","level":"3.2.1.4","depth":3,"path":"module/shop/user/user_address_add.md","ref":"module/shop/user/user_address_add.md","articles":[]},{"title":"编辑收货地址","level":"3.2.1.5","depth":3,"path":"module/shop/user/user_address_edit.md","ref":"module/shop/user/user_address_edit.md","articles":[]},{"title":"编辑收货地址","level":"3.2.1.6","depth":3,"path":"module/shop/user/user_address_delete.md","ref":"module/shop/user/user_address_delete.md","articles":[]},{"title":"设置默认收货地址","level":"3.2.1.7","depth":3,"path":"module/shop/user/user_address_default.md","ref":"module/shop/user/user_address_default.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"module/shop/user/user_register.md","mtime":"2017-01-09T03:27:04.557Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-01-09T03:28:06.813Z"},"basePath":"../../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"商品列表","level":"3.2.4.1","depth":3,"next":{"title":"商品详情","level":"3.2.4.2","depth":3,"path":"module/shop/goods/goods_info.md","ref":"module/shop/goods/goods_info.md","articles":[]},"previous":{"title":"商品","level":"3.2.4","depth":2,"path":"module/shop/goods/README.md","ref":"module/shop/goods/README.md","articles":[{"title":"商品列表","level":"3.2.4.1","depth":3,"path":"module/shop/goods/goods_list.md","ref":"module/shop/goods/goods_list.md","articles":[]},{"title":"商品详情","level":"3.2.4.2","depth":3,"path":"module/shop/goods/goods_info.md","ref":"module/shop/goods/goods_info.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"module/shop/goods/goods_list.md","mtime":"2017-01-09T03:27:04.557Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-01-09T03:28:06.813Z"},"basePath":"../../..","book":{"language":""}});
 })();
 </script>
 
