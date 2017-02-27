@@ -670,7 +670,7 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                <h3 id="&#x961F;&#x5217;-">&#x961F;&#x5217; <img alt="version" src="https://img.shields.io/github/release/ztbcms/ztbcms-Queue.svg?maxAge=36000"></h3><h4 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h4><p>1.&#x521B;&#x5EFA;&#x4EFB;&#x52A1;</p><pre><code class="lang-php"><span class="hljs-keyword">use</span> <span class="hljs-title">Queue</span>\<span class="hljs-title">Libs</span>\<span class="hljs-title">Job</span>;
+                                <h3 id="&#x961F;&#x5217;-">&#x961F;&#x5217; <img alt="version" src="https://img.shields.io/github/release/ztbcms/ztbcms-Queue.svg?maxAge=36000"></h3><h4 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h4><p>1.&#x521B;&#x5EFA;&#x4EFB;&#x52A1;</p><p>&#x7EE7;&#x627F; <code>Queue\Libs\Job</code> &#x5E76;&#x5B9E;&#x73B0;handle()&#x65B9;&#x6CD5;</p><pre><code class="lang-php"><span class="hljs-keyword">use</span> <span class="hljs-title">Queue</span>\<span class="hljs-title">Libs</span>\<span class="hljs-title">Job</span>;
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UpdateJob</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Job</span> </span>{
 
@@ -689,7 +689,7 @@
         <span class="hljs-comment">//your code</span>
     }
 }</code></pre>
-<p>2.&#x628A;&#x4EFB;&#x52A1;&#x63A8;&#x9001;&#x5230;&#x961F;&#x5217;&#x4E2D;</p><pre><code class="lang-php"> $job = <span class="hljs-keyword">new</span> UpdateJob(time(), <span class="hljs-string">&apos;ztbcms&apos;</span>);
+<p>2.&#x628A;&#x4EFB;&#x52A1;&#x63A8;&#x9001;&#x5230;&#x6307;&#x5B9A;&#x961F;&#x5217;&#x4E2D;</p><pre><code class="lang-php"> $job = <span class="hljs-keyword">new</span> UpdateJob(time(), <span class="hljs-string">&apos;ztbcms&apos;</span>);
 
 $queue = Queue::getInstance();
 $result = $queue-&gt;push(<span class="hljs-string">&apos;high&apos;</span>, $job);<span class="hljs-comment">//&#x6CE8;: high&#x5373;&#x4E3A;&#x961F;&#x5217;&#x540D;</span></code></pre>
@@ -735,7 +735,7 @@ $result = $queue-&gt;push(<span class="hljs-string">&apos;high&apos;</span>, $jo
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Feb 26th 17</a>
+                    <a href="#">Updated Feb 27th 17</a>
                 </li>
             </ul>
         </div>
@@ -762,7 +762,7 @@ $result = $queue-&gt;push(<span class="hljs-string">&apos;high&apos;</span>, $jo
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"队列","level":"3.5","depth":1,"next":{"title":"数据导入导出","level":"3.6","depth":1,"path":"module/transport/README.md","ref":"module/transport/README.md","articles":[{"title":"使用","level":"3.6.1","depth":2,"path":"module/transport/usage.md","ref":"module/transport/usage.md","articles":[]},{"title":"实战提示","level":"3.6.2","depth":2,"path":"module/transport/tips.md","ref":"module/transport/tips.md","articles":[]}]},"previous":{"title":"计划任务","level":"3.4","depth":1,"path":"module/cron/README.md","ref":"module/cron/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"module/queue/README.md","mtime":"2017-02-26T15:58:01.164Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-02-26T15:59:01.108Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"队列","level":"3.5","depth":1,"next":{"title":"数据导入导出","level":"3.6","depth":1,"path":"module/transport/README.md","ref":"module/transport/README.md","articles":[{"title":"使用","level":"3.6.1","depth":2,"path":"module/transport/usage.md","ref":"module/transport/usage.md","articles":[]},{"title":"实战提示","level":"3.6.2","depth":2,"path":"module/transport/tips.md","ref":"module/transport/tips.md","articles":[]}]},"previous":{"title":"计划任务","level":"3.4","depth":1,"path":"module/cron/README.md","ref":"module/cron/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"module/queue/README.md","mtime":"2017-02-27T01:32:35.124Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-02-27T01:34:31.624Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 
