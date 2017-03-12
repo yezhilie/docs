@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>数据库的存储引擎 · ZTBCMS</title>
+        <title>目录结构 · ZTBCMS</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,10 +57,10 @@
 
 
     
-    <link rel="next" href="behavior_manage.html" />
+    <link rel="next" href="../guide/template/" />
     
     
-    <link rel="prev" href="tips/rbac.html" />
+    <link rel="prev" href="setup.html" />
     
 
 
@@ -98,7 +98,7 @@
 
 
 
-<a href="https://github.com/ztbcms/docs/blob/develop/docs/best_practic/ztbcms_storage_engine.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/basic/structure.md" target="_blank" class="btn btn-link pull-right hidden-xs">
     修正当前页
 </a>
 
@@ -158,7 +158,7 @@
         
     
         
-        <a href="../basic/setup.html" class="list-group-item ">
+        <a href="setup.html" class="list-group-item ">
         
 
             
@@ -174,7 +174,7 @@
         
     
         
-        <a href="../basic/structure.html" class="list-group-item ">
+        <a href="structure.html" class="list-group-item active">
         
 
             
@@ -576,7 +576,7 @@
             
     
         
-        <a href="dev_tips.html" class="list-group-item ">
+        <a href="../best_practic/dev_tips.html" class="list-group-item ">
         
 
             
@@ -594,7 +594,7 @@
         
     
         
-        <a href="ztbcms_storage_engine.html" class="list-group-item active">
+        <a href="../best_practic/ztbcms_storage_engine.html" class="list-group-item ">
         
 
             
@@ -610,7 +610,7 @@
         
     
         
-        <a href="behavior_manage.html" class="list-group-item ">
+        <a href="../best_practic/behavior_manage.html" class="list-group-item ">
         
 
             
@@ -626,7 +626,7 @@
         
     
         
-        <a href="performance_optimization.html" class="list-group-item ">
+        <a href="../best_practic/performance_optimization.html" class="list-group-item ">
         
 
             
@@ -686,13 +686,37 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                <h2 id="ztbcms&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;">ZtbCMS&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;</h2><p>ZtbCMS&#x6240;&#x6709;&#x8868;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;(&#x5305;&#x62EC;&#x521B;&#x5EFA;&#x6A21;&#x578B;)&#x9ED8;&#x8BA4;&#x662F;: InnoDB [&#x4ECE;v3.2.0.0]</p><p>&#x8003;&#x8651;&#x5230;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#xFF1A;</p><ol><li>&#x5BF9;&#x4E8B;&#x52A1;&#x9700;&#x8981;&#x4E0D;&#x9AD8;&#xFF0C;&#x9664;&#x4E86;&#x652F;&#x4ED8;&#xFF0C;&#x4F59;&#x989D;&#x7EDF;&#x8BA1;&#xFF0C;&#x6536;&#x76CA;&#x8BB0;&#x5F55;&#x7B49;
-</li>
-<li>&#x67E5;&#x8BE2;&#x8FDC;&#x5927;&#x4E8E;&#x63D2;&#x5165;
-</li>
-<li>MyISAM &#x672C;&#x8EAB;&#x652F;&#x6301;FULLTEXT&#x7D22;&#x5F15;&#xFF0C;InnoDB&#x76F4;&#x5230;My SQL 5.6.4&#x624D;&#x652F;&#x6301;
-</li></ol>
-<p>&#x82E5;&#x9700;&#x8981;&#x4E8B;&#x52A1;&#x9700;&#x6C42;&#xFF0C;&#x8BF7;&#x81EA;&#x884C;&#x5BF9;&#x8BE5;&#x8868;&#x7684;&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x6539;&#x4E3A; InnoDB</p><h3 id="&#x9605;&#x8BFB;&#x53C2;&#x8003;">&#x9605;&#x8BFB;&#x53C2;&#x8003;</h3><p><a href="http://dev.mysql.com/doc/refman/5.5/en/storage-engines.html" target="_blank">MySQL 5.5&#x624B;&#x518C; - &#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x4ECB;&#x7ECD;</a></p>
+                                <h2 id="&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h2><pre><code>.
+&#x251C;&#x2500;&#x2500; app &#x5E94;&#x7528;&#x6838;&#x5FC3;&#x76EE;&#x5F55;
+&#x2502;   &#x251C;&#x2500;&#x2500; Application
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; Admin &#x540E;&#x53F0;&#x7BA1;&#x7406;&#x6A21;&#x5757;
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; Api &#x63A5;&#x53E3;&#x6A21;&#x5757;
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; Attachment &#x9644;&#x4EF6;&#x6A21;&#x5757;
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; Content
+&#x2502;   &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; Fields &#x5B57;&#x6BB5;&#x6A21;&#x677F;
+&#x2502;   &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; TagLib &#x6807;&#x7B7E;&#x5E93;
+&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; View
+&#x2502;   &#x2502;   &#x2502;       &#x251C;&#x2500;&#x2500; Addtemplate &#x5185;&#x5BB9;&#x6DFB;&#x52A0;&#x6A21;&#x677F;&#x9875;
+&#x2502;   &#x2502;   &#x2502;       &#x251C;&#x2500;&#x2500; Category &#x680F;&#x76EE;&#x5217;&#x8868;&#x6A21;&#x677F;&#x9875; 
+&#x2502;   &#x2502;   &#x2502;       &#x251C;&#x2500;&#x2500; Edittemplate  &#x5185;&#x5BB9;&#x7F16;&#x8F91;&#x6A21;&#x677F;&#x9875;
+&#x2502;   &#x2502;   &#x2502;       &#x251C;&#x2500;&#x2500; Listtemplate  &#x5185;&#x5BB9;&#x5217;&#x8868;&#x6A21;&#x677F;&#x9875;
+&#x2502;   &#x2502;   &#x2502;       &#x251C;&#x2500;&#x2500; Tags &#x6807;&#x7B7E;&#x6A21;&#x677F;&#x9875;
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; Install &#x7CFB;&#x7EDF;&#x5B89;&#x88C5;&#x6A21;&#x5757;
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; Migrate &#x6570;&#x636E;&#x8FC1;&#x79FB;&#x83AB;&#x4E8F;&#x554A;
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; System  &#x5E94;&#x7528;Model,Service
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; Template &#x6A21;&#x677F;&#x6A21;&#x5757;
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; Testing &#x6D4B;&#x8BD5;&#x6837;&#x4F8B;&#x6A21;&#x5757;
+&#x2502;   &#x251C;&#x2500;&#x2500; Common &#x5168;&#x5C40;&#x901A;&#x7528;&#x6A21;&#x5757; 
+&#x2502;   &#x251C;&#x2500;&#x2500; Core ThinkPHP&#x6838;&#x5FC3;&#x76EE;&#x5F55;
+&#x2502;   &#x251C;&#x2500;&#x2500; Libs  ZTBCMS &#x7CFB;&#x7EDF;&#x76EE;&#x5F55;
+&#x2502;   &#x2514;&#x2500;&#x2500; Template  &#x524D;&#x7AEF;&#x6A21;&#x677F;&#x76EE;&#x5F55;
+&#x2502;       &#x2514;&#x2500;&#x2500; Default
+&#x251C;&#x2500;&#x2500; d  &#x4E0A;&#x4F20;&#x6570;&#x636E;&#x76EE;&#x5F55;
+&#x251C;&#x2500;&#x2500; runtime  &#x7F13;&#x5B58;&#x76EE;&#x5F55;
+&#x251C;&#x2500;&#x2500; statics &#x9759;&#x6001;&#x6587;&#x4EF6;
+&#x2514;&#x2500;&#x2500; vendor composer&#x7B2C;&#x4E09;&#x65B9;&#x6CD5;&#x4F9D;&#x8D56;&#x76EE;&#x5F55;
+</code></pre>
+
                             </div>
                             
                         
@@ -755,7 +779,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"数据库的存储引擎","level":"5.2","depth":1,"next":{"title":"行为管理最佳实践","level":"5.3","depth":1,"path":"best_practic/behavior_manage.md","ref":"best_practic/behavior_manage.md","articles":[]},"previous":{"title":"根据管理员的权限显示","level":"5.1.5","depth":2,"path":"best_practic/tips/rbac.md","ref":"best_practic/tips/rbac.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"best_practic/ztbcms_storage_engine.md","mtime":"2017-03-12T16:06:41.691Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-03-12T16:07:45.914Z"},"basePath":"..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"目录结构","level":"1.3","depth":1,"next":{"title":"模板","level":"2.1","depth":1,"path":"guide/template/README.md","ref":"guide/template/README.md","articles":[{"title":"模板标签","level":"2.1.1","depth":2,"path":"guide/template/tag/README.md","ref":"guide/template/tag/README.md","articles":[{"title":"content内容标签","level":"2.1.1.1","depth":3,"path":"guide/template/tag/content.md","ref":"guide/template/tag/content.md","articles":[]},{"title":"spf内容标签","level":"2.1.1.2","depth":3,"path":"guide/template/tag/spf.md","ref":"guide/template/tag/spf.md","articles":[]},{"title":"tags内容标签","level":"2.1.1.3","depth":3,"path":"guide/template/tag/tags.md","ref":"guide/template/tag/tags.md","articles":[]},{"title":"comment评论标签","level":"2.1.1.4","depth":3,"path":"guide/template/tag/comment.md","ref":"guide/template/tag/comment.md","articles":[]},{"title":"position推荐位标签","level":"2.1.1.5","depth":3,"path":"guide/template/tag/position.md","ref":"guide/template/tag/position.md","articles":[]},{"title":"get数据获取标签","level":"2.1.1.6","depth":3,"path":"guide/template/tag/get.md","ref":"guide/template/tag/get.md","articles":[]},{"title":"template模板引入标签","level":"2.1.1.7","depth":3,"path":"guide/template/tag/template.md","ref":"guide/template/tag/template.md","articles":[]},{"title":"navigate导航标签","level":"2.1.1.8","depth":3,"path":"guide/template/tag/navigate.md","ref":"guide/template/tag/navigate.md","articles":[]},{"title":"pre上一篇标签","level":"2.1.1.9","depth":3,"path":"guide/template/tag/pre.md","ref":"guide/template/tag/pre.md","articles":[]},{"title":"next下一篇标签","level":"2.1.1.10","depth":3,"path":"guide/template/tag/next.md","ref":"guide/template/tag/next.md","articles":[]},{"title":"blockcache区块缓存标签","level":"2.1.1.11","depth":3,"path":"guide/template/tag/blockcache.md","ref":"guide/template/tag/blockcache.md","articles":[]}]}]},"previous":{"title":"环境搭建&安装","level":"1.2","depth":1,"path":"basic/setup.md","ref":"basic/setup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"basic/structure.md","mtime":"2017-03-12T16:06:41.691Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-03-12T16:07:45.914Z"},"basePath":"..","book":{"language":""}});
 })();
 </script>
 
