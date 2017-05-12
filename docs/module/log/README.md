@@ -2,4 +2,6 @@
 
 简单的日志模块
 
-
+```php
+use Log\Service\LogService;
+```
